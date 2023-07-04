@@ -1,16 +1,18 @@
+import Enums.PageType;
 import PageFactory.*;
 
 public class Client {
 
     public static void main(String[] args) {
 
-        PageFactory loginPageFactory = new LoginPageFactory();
-        BasePage loginPage = loginPageFactory.createPage();
+        Application app = new Application();
+
+        app.initialize(PageType.LOGIN);
+        BasePage loginPage = app.pageFactory.createPage();
         loginPage.clickElement();
 
-        PageFactory productPageFactory = new ProductPageFactory();
-        BasePage productPage = productPageFactory.createPage();
+        app.initialize(PageType.PRODUCT);
+        BasePage productPage = app.pageFactory.createPage();
         productPage.clickElement();
-
     }
 }
