@@ -1,10 +1,12 @@
 package PageFactory;
 
 import Enums.PageType;
+import Pages.LoginPage;
+import Pages.Page;
 
 public class LoginPageFactory implements PageFactory{
     @Override
-    public BasePage createPage() {
+    public Page createPage() {
         return new LoginPage(PageType.LOGIN);
     }
 }

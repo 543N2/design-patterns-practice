@@ -1,7 +1,9 @@
 package PageFactory;
 
+import Pages.Page;
+
 public interface PageFactory {
 
-    BasePage createPage();
+    Page createPage();
 
 }

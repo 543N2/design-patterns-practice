@@ -1,5 +1,5 @@
 import Enums.PageType;
-import PageFactory.*;
+import Pages.Page;
 
 public class Client {
 
@@ -8,11 +8,11 @@ public class Client {
         Application app = new Application();
 
         app.initialize(PageType.LOGIN);
-        BasePage loginPage = app.pageFactory.createPage();
+        Page loginPage = app.pageFactory.createPage();
         loginPage.clickElement();
 
         app.initialize(PageType.PRODUCT);
-        BasePage productPage = app.pageFactory.createPage();
+        Page productPage = app.pageFactory.createPage();
         productPage.clickElement();
     }
 }

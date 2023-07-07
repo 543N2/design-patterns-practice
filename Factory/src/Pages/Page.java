@@ -1,12 +1,12 @@
-package PageFactory;
+package Pages;
 
 import Enums.PageType;
 
-public abstract class BasePage {
+public abstract class Page {
 
     protected PageType pageType;
 
-    public BasePage(PageType pageType) {
+    public Page(PageType pageType) {
         this.pageType = pageType;
     }
 

@@ -1,9 +1,9 @@
-package PageFactory;
+package Pages;
 
 import Enums.ClickType;
 import Enums.PageType;
 
-public class LoginPage extends BasePage {
+public class LoginPage extends Page {
     private String buttonLocator;
 
     public LoginPage(PageType pageType){
