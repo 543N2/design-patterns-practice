@@ -1,6 +1,9 @@
 package PageFactory;
 
+import Pages.LoginPage;
+import Pages.ProductPage;
+
 public interface ThemeFactory {
-    Page createLoginPage();
-    Page createProductPage();
+    LoginPage createLoginPage();
+    ProductPage createProductPage();
 }

@@ -1,20 +1,22 @@
 import Enums.ThemeType;
-import PageFactory.Page;
+import Pages.LoginPage;
+import Pages.Page;
+import Pages.ProductPage;
 
 public class Client {
     public static void main(String[] args) {
         Application app = new Application();
 
         app.initialize(ThemeType.LIGHT);
-        Page lightLoginPage = app.factory.createLoginPage();
+        LoginPage lightLoginPage = app.factory.createLoginPage();
         lightLoginPage.clickElement();
-        Page lightProductPage = app.factory.createProductPage();
+        ProductPage lightProductPage = app.factory.createProductPage();
         lightProductPage.clickElement();
 
         app.initialize(ThemeType.DARK);
-        Page darkLoginPage = app.factory.createLoginPage();
+        LoginPage darkLoginPage = app.factory.createLoginPage();
         darkLoginPage.clickElement();
-        Page darkProductPage = app.factory.createProductPage();
+        ProductPage darkProductPage = app.factory.createProductPage();
         darkProductPage.clickElement();
     }
 }

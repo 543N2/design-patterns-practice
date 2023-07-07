@@ -1,12 +1,14 @@
 package PageFactory;
 
+import Pages.*;
+
 public class DarkThemeFactory implements ThemeFactory{
     @Override
-    public Page createLoginPage() {
+    public LoginPage createLoginPage() {
         return new DarkLoginPage();
     }
     @Override
-    public Page createProductPage() {
+    public ProductPage createProductPage() {
         return new DarkProductPage();
     }
 }

@@ -1,13 +1,15 @@
 package PageFactory;
 
+import Pages.*;
+
 public class LightThemeFactory implements ThemeFactory {
     @Override
-    public Page createLoginPage() {
+    public LoginPage createLoginPage() {
         return new LightLoginPage();
     }
 
     @Override
-    public Page createProductPage() {
+    public ProductPage createProductPage() {
         return new LightProductPage();
     }
 }
