@@ -1,9 +1,9 @@
-package PageFactory;
+package Pages;
 
 import Enums.ClickType;
 import Enums.PageType;
 
-public class ProductPage extends BasePage {
+public class ProductPage extends Page {
 
     private String imageLocator;
 

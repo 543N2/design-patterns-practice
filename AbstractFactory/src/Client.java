@@ -1,10 +1,10 @@
 import Enums.ThemeType;
 import Pages.LoginPage;
-import Pages.Page;
 import Pages.ProductPage;
 
 public class Client {
     public static void main(String[] args) {
+
         Application app = new Application();
 
         app.initialize(ThemeType.LIGHT);
